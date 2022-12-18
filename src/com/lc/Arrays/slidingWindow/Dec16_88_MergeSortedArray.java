@@ -2,7 +2,8 @@ package com.lc.Arrays.slidingWindow;
 
 import java.util.Arrays;
 
-public class Dec16MergeSortedArray {
+// Date_num_Description
+public class Dec16_88_MergeSortedArray {
 	public int[] easyMerge(int[] nums1, int m, int[] nums2, int n) {
         // a) 7 to 15 length of m
         int m_length = nums1.length;
@@ -12,6 +13,10 @@ public class Dec16MergeSortedArray {
         for(int pos_nums1 = m_length-n ; pos_nums1 < m_length ; pos_nums1++) {
             nums1[pos_nums1] = nums2[pos_nums2];
             pos_nums2++;
+        }
+        
+        for (int i =0 ; i <n ; i++) {
+        	nums1[m+i] = nums2[i];
         }
         
         System.out.println(Arrays.toString(nums1) + "before sort");
@@ -46,7 +51,7 @@ public class Dec16MergeSortedArray {
 //		Dec16MergeSortedArray obj = new Dec16MergeSortedArray();
 //		System.out.print(Arrays.toString(obj.easyMerge(nums1, m , nums2, n)));
 		
-		Dec16MergeSortedArray obj1 = new Dec16MergeSortedArray();
+	    Dec16_88_MergeSortedArray obj1 = new Dec16_88_MergeSortedArray();
 		System.out.print(Arrays.toString(obj1.bestApproach(nums1, m , nums2, n)));
 
 	}
