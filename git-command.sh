@@ -1,3 +1,3 @@
 git add .
-git commit -m "The current date is: $(date -d '+%Y-%m-%d')"
+git commit -m "Committing changes on $(date)"
 git push
